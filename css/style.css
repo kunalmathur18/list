@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /* background-image: url('../images/background.jpg'); */
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+
+    height: 100vh;
+    width: 100%;
+    animation: color 12s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0 50%;
+
+    }
+}
+/* #e6b7eca1 */
+.box{
+    width: 500px;
+    height: auto;
+    min-height: 500px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .37);
+
+}
+h1{
+    text-align: center;
+    color: #120606;
+}
+.inputClass{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.inputClass input{
+     width: 400px;
+     height: 35px;
+     background: transparent;
+     color: #2c2020;
+    border: 2px solid #280606;
+     border-radius: 5px;
+     font-size: 23px;
+     padding: 10px;
+}
+.inputClass input:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+.inputClass input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-style:oblique;
+}
+.totalCounter{
+    font-size: 21px;
+}
+.inputClass svg{
+    color: #2c2020;
+    size: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.inputClass svg:hover{
+    color: #f5f5f5;
+}
+ul{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* align-items: center; */
+
+}
+ul li{
+    list-style-type: none;
+    border: 2px solid #280606;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex   ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 20px;
+    transition: background-color 0.5s;
+
+
+}
+ul li:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+ul li .del:hover{
+    color: red;
+}
+ul li .ed:hover{
+    color: green;
+}
+ul li p{
+    flex-grow: 1;
+}
+.btn{
+    /* border: 1px solid #ac9f9f; */
+    padding: 5px 10px   ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: black; */
+    /* color: wheat; */
+}
+.completed p {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+}
